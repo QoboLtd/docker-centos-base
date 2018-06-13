@@ -32,6 +32,7 @@ RUN yum -y install ack \
     mtr \
     screen \
     strace \
+    subversion \
     telnet \
     tig \
     tree \

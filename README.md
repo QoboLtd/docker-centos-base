@@ -1,7 +1,8 @@
 docker-centos-base
 ========================
 
-Base docker image with CentOS base on official centos:centos7 image
+Base docker image with CentOS base on official [centos:centos7](https://hub.docker.com/_/centos/) image.
+Developed by [Qobo](https://www.qobo.biz), used in [Qobrix](https://qobrix.com).
 
 ### Documentation
 
@@ -12,6 +13,10 @@ The following changes are applied compared to official centos image:
 * Install EPEL repo
 * Install base tools
 * Add bitbucket and github host signatures to SSH known_hosts
+
+### License
+
+[MIT](https://poser.pugx.org/qobo/docker-centos-base/license)
 
 ### Links
 
