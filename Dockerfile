@@ -30,6 +30,7 @@ RUN yum -y install ack \
     links \
     mc \
     mtr \
+    openssh-clients \
     screen \
     strace \
     subversion \
