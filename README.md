@@ -13,3 +13,7 @@ The following changes are applied compared to official centos image:
 * Install base tools
 * Add bitbucket and github host signatures to SSH known_hosts
 
+### Links
+
+* Docker HUB: https://hub.docker.com/r/qoboltd/docker-centos-base/
+* Github: https://github.com/QoboLtd/docker-centos-base
