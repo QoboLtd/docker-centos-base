@@ -17,7 +17,7 @@ The following changes are applied compared to official centos image:
 
 ### License
 
-[MIT](https://poser.pugx.org/qobo/docker-centos-base/license)
+[MIT](https://github.com/QoboLtd/docker-centos-base/blob/master/LICENSE)
 
 ### Links
 
