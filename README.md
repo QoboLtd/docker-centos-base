@@ -2,6 +2,7 @@ docker-centos-base
 ========================
 
 Base docker image with CentOS base on official [centos:centos7](https://hub.docker.com/_/centos/) image.
+
 Developed by [Qobo](https://www.qobo.biz), used in [Qobrix](https://qobrix.com).
 
 ### Documentation
