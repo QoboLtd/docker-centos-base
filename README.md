@@ -9,7 +9,6 @@ Developed by [Qobo](https://www.qobo.biz), used in [Qobrix](https://qobrix.com).
 
 The following changes are applied compared to official centos image:
 
-* Set UTC time
 * Enable networking
 * Install EPEL repo
 * Install base tools

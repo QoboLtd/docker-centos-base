@@ -19,6 +19,7 @@ RUN yum -y install --setopt=tsflags=nodocs git \
     openssh-clients \
     subversion \
     unzip \
+    which \
     wget \
     zip \
     && yum clean all \
