@@ -4,15 +4,9 @@ LABEL org.label-schema.schema-version="1.0" \
     org.label-schema.name="CentOS Base Image" \
     org.label-schema.vendor="Qobo Ltd" \
     org.label-schema.livence="MIT" \
-    org.label-schema.build-data="20180613"
+    org.label-schema.build-data="201806134"
 
-ARG uid=1000
-ARG gid=1000
-
-ENV container docker
-
-# UTC Timezone
-RUN ln -sf /usr/share/zoneinfo/UTC /etc/localtime
+MAINTAINER Qobo Ltd info@qobo.biz
 
 # Enable Networking
 RUN echo "NETWORKING=yes" > /etc/sysconfig/network
@@ -21,26 +15,14 @@ RUN echo "NETWORKING=yes" > /etc/sysconfig/network
 RUN rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 
 # Install PHP and Tools 
-RUN yum -y install ack \
-    bash-completion \
-    bind-utils \
-    git \
-    grep \
-    htop \
-    links \
-    mc \
-    mtr \
+RUN yum -y install --setopt=tsflags=nodocs git \
     openssh-clients \
-    screen \
-    strace \
     subversion \
-    telnet \
-    tig \
-    tree \
     unzip \
-    vim-enhanced \
     wget \
-    zip
+    zip \
+    && yum clean all \
+    && rm -rf /var/cache/yum
 
 # Configure SSH for bitbucket and github hosts to be known
 RUN mkdir ~/.ssh \
